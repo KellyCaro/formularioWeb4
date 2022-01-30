@@ -16,5 +16,6 @@ de lo contrario retornara un mensaje de error
 
 
 el modulo log se encuentra en la carpeta registros/logRegistros
-aqui se encontrar los registros hechos por parte del usuario
+
+Aqui se encontrarás los registros hechos por parte del usuario
 
