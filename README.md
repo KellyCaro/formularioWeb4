@@ -14,7 +14,6 @@ ingresas en la url localhost:7000/consultar
 
 de lo contrario retornara un mensaje de error
 
-si 
 
 el modulo log se encuentra en la carpeta registros/logRegistros
 aqui se encontrar los registros hechos por parte del usuario
