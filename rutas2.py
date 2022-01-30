@@ -36,16 +36,7 @@ def index():
 
 
 
-@app.route('/enviarmensaje',methods=["POST"])              #wrap Microservicio, response = lo que retorna
-def envia():
-    if request.method=="POST":
-        nombre=request.form['nombre']
-        correo=request.form['correo']
-        ciudad=request.form['ciudad']
-        print (nombre)
-        print (correo)
-        print (ciudad)
-        return "Lo has hecho bien"     #Respuesta del servidor
+
 
 @app.route('/consultar')              #wrap Microservicio, response = lo que retorna
 def consulta():
@@ -60,8 +51,13 @@ def consulta():
 
             return jsonify({"msg": "Ha ocurrido un error"}),500     #Respuesta del servidor
 
-@app.route("/agregar",methods=["POST"])
 
+@app.route('/registrar')              #wrap Microservicio, response = lo que retorna
+def reg():
+    return render_template('registrar.html')     #Respuesta del servidor
+
+
+@app.route("/agregar",methods=["POST"])
 def addUser():
     try:
         nombre= request.form["nombre"]
